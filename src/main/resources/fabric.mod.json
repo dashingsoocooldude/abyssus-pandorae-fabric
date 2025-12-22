@@ -5,11 +5,15 @@
 	"name": "Abyssus Pandorae",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Da5h1n",
+		"FunFi",
+		"Midnightmuffet",
+		"Horatio151"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/dashingsoocooldude/abyssus-pandorae-fabric",
+        "issues": "https://github.com/dashingsoocooldude/abyssus-pandorae-fabric/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/abyssus-pandorae/icon.png",

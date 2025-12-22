@@ -1,17 +1,13 @@
 package abyssus.pandorae;
 
-import abyssus.pandorae.gui.ChooseFaithScreen;
-import com.mojang.blaze3d.buffers.GpuBuffer;
+import abyssus.pandorae.gui.kingdoms.ChooseKingdomScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.mixin.client.keybinding.KeyMappingAccessor;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
-
-import javax.swing.text.JTextComponent;
 
 public class AbyssusPandoraeClient implements ClientModInitializer {
 
@@ -33,7 +29,7 @@ public class AbyssusPandoraeClient implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(minecraftClient -> {
             if (OPEN_FAITH_SCREEN.wasPressed()) {
-                minecraftClient.setScreen(new ChooseFaithScreen());
+                minecraftClient.setScreen(new ChooseKingdomScreen());
             }
         });
 
